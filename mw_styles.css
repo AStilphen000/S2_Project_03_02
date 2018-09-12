@@ -14,13 +14,12 @@
 
 */
 
-
-/* Structural Styles */
-
 /*In the structurl syles section of this website I mostly worked on the body to change things into the desirred colors, font, sizing, and padding which sets all four sides of an element.*/
 
-section {
-    background-color: rgb(172, 189, 227);
+
+/* Structural Styles */
+html {
+    background-color: rgb(173, 189, 227);
 }
 
 body {
@@ -41,14 +40,18 @@ address {
     padding-bottom: 10px;
 }
 
+/*In this section of my code I just had to add a font weight, which is mkaing the font not so bold but bold enough.*/
+
 /* Heading Styles */
 h1 h2 {
     font-weight: normal;
 }
 
+/*In the nav styles section I had to take away the bulleted posints with the list style type syle rule. I also had to make the links on the left blue by just using a visted link style rule. Also making ever active link that you hovered over to red so when you hover over the link it turns red and when you move your curser away then it turns back to it's original color dark blue.*/
 
 /* Navigation Styles */
 nav>ul {
+    list-style-type: none; 
     line-height: 2em;
     font-size: 0.9em;
 } 
@@ -56,8 +59,15 @@ nav>ul {
 nav a:link,
 nav a:visited {
     text-decoration: none;
+    color: rgb(43, 59, 125);
+}
+
+nav a:active,
+nav a:hover{
     color: rgb(212, 35, 35);
 }
+
+/*The article styles I made litle changes to which were making the summary of the website have different letter soacing and the font size for the first line of the summary.*/
 
 /* Article Styles */
 article#tour_summary h1 {
@@ -69,12 +79,12 @@ article#tour_summary p {
     font-size: 1.1em;
 }
 
-article#tour_summary section:first-of-type, 
-article#tour_summary section::first-line {
+article#tour_summary p:first-of-type:first-line {
     font-size: 1.2em;
+    font-variant: small-caps
 }
 
-
+/*The aside styles I used the if of tour itinerary to innerchange the colors from army green to blue, with also changing the font size.*/
 
 /* Aside Styles */
 aside#tour_itinerary h1 {
@@ -89,21 +99,27 @@ aside#tour_itinerary p {
     font-size: 0.8em;
 }
 
-aside#tour_itinerary h2 p section:nth-of-type(odd) {
+aside#tour_itinerary>h2:nth-of-type(odd), 
+aside#tour_itinerary>p:nth-of-type(odd) {
     color: rgb(79, 91, 40);
 }
 
-aside#tour_itinerary h2 p section:nth-of-type(even) {
+aside#tour_itinerary>h2:nth-of-type(even),
+aside#tour_itinerary>p:nth-of-type(even) {
     color: rgb(81, 95, 175);
 } 
 
+/*This section of code was just sing colors to change text color and background color of the website and changing the area of the website to differeny pixel sizes.*/
+
 /* Blockquote Styles */
 blockquote {
-    background-color: rgb(255, 255, 255);
-    opacity: 0.65;
+    color: rgba(255, 255, 255, 0.65); 
+    background-color: rgb(173, 189, 227);
 }
 
-blockquote section p {
-    padding-top: 2.5
-    
+blockquote>p {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
